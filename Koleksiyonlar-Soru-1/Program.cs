@@ -15,7 +15,7 @@ namespace Collections
         */
         static bool IsPrimeNumber(int sayi)// islemler arasında → asal olup olmadığını işaretlemek için
         {
-            if (sayi <= 1) // asal sayılar ikiden başlar
+            if (sayi <= 1) // asal sayılar ikiden başlar en küçük asal sayı 2 dir.
                 return false;
 
             for (int i = 2; i < sayi - 1 ; i++)      
@@ -35,7 +35,7 @@ namespace Collections
             int primeTotal = 0;// istemler arasında → asal sayıların toplamı için
             int notPrimeTotal = 0;// istemler arasında → asal olmayan sayıların toplamı için
 
-            for (int i = 0; i < 5; i++)// 0-20 → 20 kere çalıştır.
+            for (int i = 0; i < 20; i++)// 0-20 → 20 kere çalıştır.
             {
                 while (true)// negatif ve numeric olmayan sayıların girilme ihtimaline karşı
                 {           // elimizde pozitif tam sayı haricinde bir şey olursa yapmaya çalıştığımız şey bozulur
@@ -72,22 +72,22 @@ namespace Collections
             }
             
             // Sıralama
-            primeNumbers.Sort();                // önce küçükten büyüğe doğru sıralandı.
-            primeNumbers.Reverse();             // sonra tersi alındı.
+            primeNumbers.Sort();// önce küçükten büyüğe doğru sıralandı.
+            primeNumbers.Reverse();// sonra tersi alındı.
 
             notPrimeNumbers.Sort();
             notPrimeNumbers.Reverse();
 
             // Listeler
-            Console.WriteLine("\nAsal Sayıların Listesi");              // \n → satır geçmek için
+            Console.WriteLine("\nAsal Sayıların Listesi");// \n → satır geçmek için
             for (int i = 0; i < primeNumbers.Count; i++)
             {
-                Console.Write(primeNumbers[i] + " ");           // aynı satıra aralarında boşluk bırakarak bütün index'leri tek tek yaz
+                Console.Write(primeNumbers[i] + " ");// aynı satıra aralarında boşluk bırakarak bütün index'leri tek tek yaz
             }
             Console.WriteLine("\n\nAsal Olmayan Sayıların Listesi");
             for (int i = 0; i < notPrimeNumbers.Count; i++)
             {
-                Console.Write(notPrimeNumbers[i] + " ");        // aynı satıra aralarında boşluk bırakarak bütün index'leri tek tek yaz
+                Console.Write(notPrimeNumbers[i] + " ");// aynı satıra aralarında boşluk bırakarak bütün index'leri tek tek yaz
             }
 
             // Ortalamalar  → hiç asal sayı girmeme durumu
