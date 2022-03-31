@@ -20,7 +20,7 @@ namespace Collections
             int maxTotal = 0;// istemler arasında → en büyük üç sayının toplamı için
             int minTotal = 0;// istemler arasında → en küçük üç sayının toplamı için
 
-            for (int i = 0; i < 6; i++)        // 0-20 → 20 kere çalıştır.
+            for (int i = 0; i < 20; i++)        // 0-20 → 20 kere çalıştır.
             {
                 while(true)
                 {
