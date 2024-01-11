@@ -6,10 +6,7 @@ namespace Collections
 {
     class Program
     {
-        /*Soru - 2: Klavyeden girilen 20 adet sayının en büyük 3 tanesi ve en küçük 3 tanesi bulan, 
-        her iki grubun kendi içerisinde ortalamalarını 
-        alan ve bu ortalamaları ve ortalama toplamlarını console'a yazdıran programı yazınız. 
-        (Array sınıfını kullanarak yazınız.) */
+     
         static void Main(string[] args)
         {
             Console.WriteLine("Lütfen sırayla 20 adet pozitif tam sayı giriniz: ");
