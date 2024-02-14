@@ -11,3 +11,4 @@ Write a program to input 20 numbers from the keyboard. Find the top 3 and bottom
 
 ## Question - 3
 Write a program to input a sentence from the keyboard. Store the vowels in an array and sort the elements of the array.
+ 
